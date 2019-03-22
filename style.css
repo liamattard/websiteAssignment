@@ -29,3 +29,17 @@ div.test{
     background-image: url('assets/smoke.gif');
 
 }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
