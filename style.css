@@ -15,7 +15,13 @@ ul {
 
 .right img
 {
-
+    float: none;
+    left: 80%;
+    top: 100%;
+    margin-top: 10.0%;
+    width: 50%; 
+    align-content: center;
+    
 }
 
 div.test{
@@ -26,20 +32,13 @@ div.test{
     width: 60%;
     float: right;
     top: 0;
-    background-image: url('assets/smoke.gif');
+    background-image: url('assets/smoke.gif')
+}
+.page-wrap
+{
+
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
 
 }
-
-.container {
-    position: relative;
-    text-align: center;
-    color: white;
-  }
-
-  /* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
