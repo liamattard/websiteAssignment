@@ -15,7 +15,15 @@ ul {
 
 .right img
 {
+    float: none;
+    left: 80%;
+    top: 100%;
+    margin-top: 10.0%;
+    width: 50%; 
+    height: 80000%;
 
+    align-content: center;
+    
 }
 
 div.test{
@@ -25,6 +33,7 @@ div.test{
     opacity: 0.8;
     width: 50%;
     float: right;
+
     top: 0;
     background-image: url('assets/smoke.gif')
 }
