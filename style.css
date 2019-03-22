@@ -1,5 +1,5 @@
 body{
-    background-color: #131111;
+    background-color: #201e1e;
 }
 
 li{
@@ -15,13 +15,16 @@ ul {
 
 .right img
 {
-    float: right;
-    left: 80px;
-    top: 100%;
-    margin-top: 5%;
+
+}
+
+div.test{
+
+    position: relative;
+    left: 0;
+    opacity: 0.8;
     width: 50%;
-    height: 400%;
-
-
-    
+    float: right;
+    top: 0;
+    background-image: url('assets/smoke.gif')
 }
