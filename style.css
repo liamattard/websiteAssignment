@@ -1,5 +1,27 @@
 body{
+    background-color: #131111;
+}
+
+li{
+    float: left;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+.right img
+{
+    float: right;
+    left: 80px;
+    top: 100%;
+    margin-top: 9%;
+    width: 50%;
+    height: 400%;
 
 
-    background-color: #131111
+    
 }
