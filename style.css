@@ -23,8 +23,9 @@ div.test{
     position: relative;
     left: 0;
     opacity: 0.8;
-    width: 50%;
+    width: 60%;
     float: right;
     top: 0;
-    background-image: url('assets/smoke.gif')
+    background-image: url('assets/smoke.gif');
+
 }
