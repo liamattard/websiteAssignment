@@ -37,3 +37,11 @@ div.test{
     top: 0;
     background-image: url('assets/smoke.gif')
 }
+.page-wrap
+{
+
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+
+}
