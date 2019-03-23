@@ -1,5 +1,9 @@
+:root{
+    --background:  #131111;
+}
+
 body{
-    background-color: #131111;
+    background-color: var(--background);
     font-family: 'Open Sans', sans-serif;
 }
 .logo{
