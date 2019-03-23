@@ -1,18 +1,13 @@
 body{
-    background-color: #201e1e;
+    background-color: #131111;
+    font-family: 'Open Sans', sans-serif;
 }
 .logo{
+    float: left;
     height: 15vmin;
-    padding: 2%;
+    padding: 0%;
     width: 15vmin;
 }
-.menu{
-    height: 15vmin;
-    padding: 2%;
-    width: 15vmin;
-}
-.close{
-    height: 15vmin;
-    padding: 2%;
-    width: 15vmin;
+nav{
+    float: left;
 }
