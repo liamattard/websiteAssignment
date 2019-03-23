@@ -23,6 +23,24 @@ ul {
     align-content: center;
     
 }
+.fries img
+{
+    display: block;
+    margin-left:350px;
+    margin-top: 60px;
+    margin-right: auto;
+    width: 50%;
+}
+textarea
+{
+    display:block;
+    margin-left:660px;
+    margin-right: auto; 
+    
+
+
+}
+
 
 div.test{
 
@@ -40,5 +58,105 @@ div.test{
     width: 960px;
     margin: 0 auto;
     position: relative;
+
+}
+
+
+    .body{
+
+
+    font-family: 'Open', sans;
+    position: relative;    
+    font-size:200%;
+    color: #bccd00; 
+    left: 45%;
+    top: 5%;
+    
+
+
+    }
+
+
+
+.logo
+{
+
+    position: relative;
+    width: 10%;
+    height: 10%;
+    margin-left: 46%;
+
+
+
+}
+.rectangle
+{
+
+    position:relative;
+  height: 2px;
+  width: 800px;
+  left:20%;
+
+  background-color: #bccd00;
+
+
+
+}
+
+
+
+
+
+
+@media(max-width: 991px)
+{
+
+    .body
+    {
+
+        position: relative;
+        font-size: 155%;
+       left: 47%;
+
+    }
+    .logo
+    {
+
+        position: relative;
+        width: 9%;
+        height: 9%;
+        margin-left: 50%;
+
+
+
+    }
+
+
+}
+
+@media(max-width: 500px)
+{
+
+    .body
+    {
+
+        position: relative;
+        font-size: 100%;
+        left:35%;
+       
+
+    }
+    .logo
+    {
+
+        position: relative;
+        width: 8%;
+        height: 8%;
+       margin-left:40%;
+
+
+
+    }
+
 
 }
