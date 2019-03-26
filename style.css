@@ -1,44 +1,154 @@
 body{
-    background-color: #201e1e;
+
+    font-family: 'Open Sans', sans-serif ;
+    font-stretch: narrower;
 }
+.container {
+    display: grid;
+    grid-row-gap: 0px;
+  }
+  
+  .level1 {
+    background: #282828;
+    grid-row: 1;
+    margin-bottom:0px;
+   
+  }
+  
+  .level2 {
+    background: #c0b5a9;
+    grid-row: 2;
+    margin-top:0px;
 
-li{
-    float: left;
-
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
   }
 
-.right img
-{
-    float: none;
-    left: 80%;
-    top: 100%;
-    margin-top: 10.0%;
-    width: 50%; 
-    align-content: center;
-    
+  .level3 {
+    background: #282828;
+    grid-row: 3;
+    margin-top:0px;
+
+  }
+
+
+
+
+
+
+#h11{
+ font-size:100px;
+ color: rgb(84, 117, 143) ;
+ margin-left:45%;
+ margin-top:5%;
+ margin-bottom:0%;
 }
 
-div.test{
-
-    position: relative;
-    left: 0;
-    opacity: 0.8;
-    width: 60%;
-    float: right;
-    top: 0;
-    background-image: url('assets/smoke.gif')
+#h12{
+    font-size: 80px;
+    color: rgb(227, 230, 56) ;
+    margin-left:45%;
+    margin-top:0%;
+    margin-bottom:7%;
 }
-.page-wrap
-{
 
-    width: 960px;
-    margin: 0 auto;
-    position: relative;
-
+#p11{
+    font-size: 12px;
+    width: 35%;
+    color: whitesmoke ;
+    margin-left:55%;
+    margin-top: 0%;
+    margin-bottom:7%;
+    top:35%;
+    position: absolute;
+    z-index: 1;
 }
+
+#i11{
+    margin-left:10%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+#h21{
+    font-size: 60px;
+    color: #282828 ;
+    margin-left:10%;
+    top:20%;
+    margin-bottom:0%;
+}
+
+#p21{
+    font-size: 12px;
+    width: 35%;
+    color: #282828 ;
+    margin-top: 2%;
+    margin-left:10%;
+    margin-bottom:0%;
+}
+   
+
+#i21{
+    margin-left:60%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
+
+#h31{
+    font-size: 60px;
+    color: #c0b5a9 ;
+    margin-left:45%;
+    margin-top: 0%;
+}
+
+#p31{
+    font-size: 12px;
+    width: 35%;
+    color: #c0b5a9 ;
+    margin-top: 2%;
+    margin-left:45%;
+    margin-bottom:0%;
+}
+
+#i31{
+    margin-left:10%;
+    margin-top: 2%;
+    position: absolute;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body { background: #fff; }
+#wrapper {
+    background: url(1px.png) repeat-y;
+    background-size: 100% auto;
+    width: 100%;
+}
+   
+
+
+
+ 
