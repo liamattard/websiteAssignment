@@ -6,6 +6,7 @@ body{
 .container {
     display: grid;
     grid-row-gap: 0px;
+    
   }
   
   .level1 {
@@ -35,40 +36,56 @@ body{
 
 
 #h11{
- font-size:100px;
+ font-size: 7vw;
  color: rgb(84, 117, 143) ;
- margin-left:45%;
+ text-align: right;
  margin-top:5%;
  margin-bottom:0%;
+ margin-right:40%;
+
 }
 
 #h12{
-    font-size: 80px;
+    font-size: 5vw;
     color: rgb(227, 230, 56) ;
+    text-align: right;
     margin-left:45%;
     margin-top:0%;
     margin-bottom:7%;
+    margin-right:40%;
+    
 }
 
 #p11{
-    font-size: 12px;
+    font-size: 0.7vw;
     width: 35%;
     color: whitesmoke ;
-    margin-left:55%;
+    margin-left:52%;
     margin-top: 0%;
     margin-bottom:7%;
-    top:35%;
-    position: absolute;
-    z-index: 1;
+    top:30%;
+   
+    
 }
 
 #i11{
+    
     margin-left:10%;
-    margin-top: 2%;
-    position: absolute;
-    z-index: 0;
-}
+bottom: 2em
+    max-width: 35%;
+    max-height: 35%;
 
+    z-index: 2;
+
+}
+ @media (max-width: 600px){
+     #i11{
+        top: 10%;
+        max-width: 15%;
+        max-height: 15%;
+
+     }
+ }
 
 
 
@@ -76,7 +93,7 @@ body{
 
 
 #h21{
-    font-size: 60px;
+    font-size: 6vw;
     color: #282828 ;
     margin-left:10%;
     top:20%;
@@ -84,7 +101,7 @@ body{
 }
 
 #p21{
-    font-size: 12px;
+    font-size: 0.7vw;
     width: 35%;
     color: #282828 ;
     margin-top: 2%;
@@ -96,7 +113,8 @@ body{
 #i21{
     margin-left:60%;
     margin-top: 2%;
-    position: absolute;
+    max-width: 25%;
+    max-height: 25%;
     z-index: 0;
 }
 
@@ -106,14 +124,14 @@ body{
 
 
 #h31{
-    font-size: 60px;
+    font-size: 6vw;
     color: #c0b5a9 ;
     margin-left:45%;
     margin-top: 0%;
 }
 
 #p31{
-    font-size: 12px;
+    font-size: 0.7vw;
     width: 35%;
     color: #c0b5a9 ;
     margin-top: 2%;
@@ -124,7 +142,9 @@ body{
 #i31{
     margin-left:10%;
     margin-top: 2%;
-    position: absolute;
+    max-width: 30%;
+    max-height: 30%;
+    
     z-index: 0;
 }
 
