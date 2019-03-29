@@ -1,6 +1,89 @@
+html, body 
+{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 body{
     background-color: #201e1e;
+ 
 }
+
+
+input[type=text], select {
+    width: 20%;
+    position:relative;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px rgb(59, 59, 59);
+    background-color:rgb(59, 59, 59);
+    border-radius: 10px;
+    box-sizing: border-box;
+  }
+  .textboxpos1
+  {
+    margin-top: 25%;
+    margin-left: 6%;
+    left:10%;
+    color: white;
+
+
+  }
+  .textboxpos2
+  {
+    margin-top: 25%;
+    margin-left: 6%;
+    left:32%;
+    color:white;
+
+  }
+  .textboxpos3
+  {
+    
+    position:relative;
+    top: 35%;
+    margin-left: 20%;
+    left:10%;
+    color: white;
+
+
+  }
+  .textboxpos4
+  {
+    
+    position:relative;
+    top: 35%;
+    margin-left: 20%;
+    left:32%;
+    color: white;
+
+
+  }
+  .placeholdername1
+  {
+    font-family: 'Open Sans', sans-serif;
+    position:relative;
+    top: 30%;
+    margin-left: 20%;
+    left:13%;
+    color: white;
+
+
+  }
+
+  .textareaquery
+  {
+    position: absolute;  
+    background-color:  rgb(59, 59, 59);
+    border-color: rgb(59, 59, 59);
+    left:16%;
+    top:110%;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 10px;
+
+
+  }
+
 
 li{
     float: left;
@@ -23,26 +106,9 @@ ul {
     align-content: center;
     
 }
-.fries img
+
+div.test
 {
-    display: block;
-    margin-left:350px;
-    margin-top: 60px;
-    margin-right: auto;
-    width: 50%;
-}
-textarea
-{
-    display:block;
-    margin-left:660px;
-    margin-right: auto; 
-    
-
-
-}
-
-
-div.test{
 
     position: relative;
     left: 0;
@@ -62,21 +128,79 @@ div.test{
 }
 
 
-    .body{
+ .title 
+ {
 
 
-    font-family: 'Open', sans;
+    font-family: 'Open Sans', sans-serif;
     position: relative;    
     font-size:200%;
-    color: #bccd00; 
-    left: 45%;
+    color: white; 
+    left: 43%;
+    top: 5%;
+
+
+ }
+
+.contactPara
+{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;    
+    font-size:100%;
+    color: white; 
+    left: 10%;
+    margin-left:6%;
     top: 5%;
     
 
 
-    }
 
 
+}    
+.social
+{
+
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+    position: relative;    
+    font-size:100%;
+    color: white; 
+    right: 10%;
+    margin-right: 6%;
+    top: 1%;
+    
+
+    
+}
+
+.querytitle
+{
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    position: relative;    
+    font-size:100%;
+    color: white; 
+    left:10%;
+    margin-left: 6%;
+    margin-top: 20%;
+    top: 200%;
+
+
+
+
+}
+.querytit1
+{
+    font-family: 'Open Sans', sans-serif;
+    position: relative;   
+    
+    font-size:80%;
+    color: white; 
+    left:10%;
+    margin-top: 23%;
+   
+    
+}
 
 .logo
 {
@@ -84,79 +208,201 @@ div.test{
     position: relative;
     width: 10%;
     height: 10%;
-    margin-left: 46%;
-
-
-
-}
-.rectangle
-{
-
-    position:relative;
-  height: 2px;
-  width: 800px;
-  left:20%;
-
-  background-color: #bccd00;
+    left: 45%;
 
 
 
 }
 
-
-
-
-
-
-@media(max-width: 991px)
+.subtitle
 {
 
-    .body
-    {
+    font-family: 'Open Sans', sans-serif;
+    position: relative;    
+    font-size:130%;
+    color: white; 
+    left: 35%;
+    top: 30%;
+    
 
-        position: relative;
-        font-size: 155%;
-       left: 47%;
 
-    }
+
+}
+.button
+{
+
+  position:absolute;  
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size:16px;
+  cursor: pointer;
+  
+ 
+
+
+}
+.button1
+{
+  background-color:transparent; 
+  color: white; 
+  border: 2px solid #bccd00;
+  top:205%;
+  left:45%;
+
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: #125688;
+  color: white;
+ }
+ .warningbooking
+ {
+
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;    
+    font-size:80%;
+    color: white; 
+    left: 33%;
+    top: 15%;
+
+ }
+ .warningbooking2
+ {
+
+    font-family: 'Open Sans', sans-serif;
+    position: absolute;    
+    font-size:80%;
+    color: white; 
+    left: 40%;
+    top: 20%;
+
+ }
+ 
+
+#map
+{
+
+    height: 300px;
+    width: 100%;
+
+
+}
+
+
+
+ @media(max-width: 991px) /*smaller than 991px */
+{
     .logo
     {
-
-        position: relative;
-        width: 9%;
+        position:relative;
+        margin-top:10%;
+        width:9%;
         height: 9%;
-        margin-left: 50%;
-
+        left:45%;
+        
 
 
     }
 
 
-}
+    .title
+    {
+        font-size: 150%;
+        left:30%;
 
-@media(max-width: 500px)
-{
+    }
+    .subtitle
+    {
 
-    .body
+        font-size:80%;
+        left:17%;
+
+    }
+    .contactPara
+    {
+
+        font-size:80%;
+        left:15%;
+
+    }
+    .querytitle
+    {
+
+        font-size:80%;
+
+    }
+    .social
+    {
+
+        font-size:80%;
+       left:2%;
+
+    }
+    .querytitle
+    {
+        position: relative;
+        top:10%;
+        left:5%;
+
+
+
+    }
+    .textboxpos1
     {
 
         position: relative;
-        font-size: 100%;
+        top:130%;
+        
+
+
+    }
+    .textboxpos2
+    {
+        position: relative;
+        top:130%;
+
+
+    }
+    .textareaquery
+    {
+
+        position: relative;
+        top:115%;
+
+        left:0%;
+
+
+    }
+    .button1
+    {
+        position: relative;
+        top:140%;
         left:35%;
-       
 
     }
-    .logo
-    {
-
-        position: relative;
-        width: 8%;
-        height: 8%;
-       margin-left:40%;
-
-
-
-    }
-
-
 }
+
+
+
+

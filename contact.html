@@ -14,18 +14,86 @@
 
 
 </head>
+
+
+
+
+
+
+
 <body>
 
     
-    <img src ="assets/logo.png" alt = "logo" class="logo">
+    <img src ="assets/contact us.png" alt = "logo" class="logo">
+   
+    
 
 
 
 
-
-<h1 class = "body">Contact Us </h1>
+<h1 class = "title">Contact Us </h1>
+<h1 class ="subtitle"> Get in Touch ! We would love to help</h1>
 <div class="rectangle"></div>
 
+<div id="map"></div>
+<script>
+        // Initialize and add the map
+        function initMap() {
+          // The location of Uluru
+          var uluru = {lat: 36.010314, lng: 14.332056};
+          // The map, centered at Uluru
+          var map = new google.maps.Map(
+              document.getElementById('map'), {zoom: 15, center: uluru});
+          // The marker, positioned at Uluru
+          var marker = new google.maps.Marker({position: uluru, map: map});
+        }
+            </script>
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMqECPd8G0UAzExZpjDSdt4RmtapT3MI&callback=initMap">
+</script>
+
+
+<p class = "contactPara"> Ate-Bit Burger <br>
+    Triq it-Trunciera San Pawl il- Bahar <br>
+    Telephone : 00356 22658194 
+    <br>
+</p>
+
+
+<p class = "social"> 
+
+        
+        Find us on: <br>
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <br>
+Opening Hours:<br>
+09:30 till 22:00
+<br>
+Email: <br>
+AteBit@gmail.com
+
+</p>
+
+<h2 class = "querytitle"> You can also use this form to leave us a message</h2>
+
+<div >
+
+    
+    <input type = "text" id = "name" name = "firstname" placeholder="Name and surname... " class= "textboxpos1"  >
+    <input type = "text" id = "name" name = "firstname" placeholder="Email... " class ="textboxpos2"  >
+  
+</div>
+
+<textarea rows="10" cols="65" class="textareaquery"></textarea>
+
+<button class ="button button1">Submit</button>
 
 
 
