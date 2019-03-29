@@ -1,17 +1,30 @@
 :root{
-    --background:  #131111;
+    --background:  #000000;
 }
 
 body{
     background-color: var(--background);
     font-family: 'Open Sans', sans-serif;
 }
-.logo{
-    float: left;
-    height: 15vmin;
-    padding: 0%;
-    width: 15vmin;
+.smoke{
+
+    width: 980px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 1300px;
 }
-nav{
-    float: left;
+.burger{
+    position: absolute;
+    width: 600px;
+    left: 50%;
+    top: 35%;
+}
+p{
+    color: gold;
+    font-size:  120px;
+    text-align: center;
+    left: 16%;
+    top: 10%;
+    position: absolute;
 }
