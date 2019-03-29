@@ -2,122 +2,241 @@ body{
 
     font-family: 'Open Sans', sans-serif ;
     font-stretch: narrower;
+    
 }
+
+
 .container {
     display: grid;
     grid-row-gap: 0px;
-    
+    width: 100%;
   }
-  
-  .level1 {
-    background: #282828;
+
+  .level11 {
+    background-image: linear-gradient(to right, #242424 , #2e2e36); 
     grid-row: 1;
+    border-radius: 50px 1px 1px 50px;
     margin-bottom:0px;
-   
   }
+  .level12 {
+    background-image: linear-gradient(to right, #2e2e36 , #4e4e5c);
+    grid-row: 1;
+    border-radius: 1px 50px 50px 1px;
+    margin-bottom:0px;
+  }
+
   
-  .level2 {
-    background: #c0b5a9;
+
+
+  /* ==================================================================== */
+  
+  
+  .level21 {
+    background-image: linear-gradient(to right, #cccccf , #ebebeb);
     grid-row: 2;
+    border-radius: 50px 1px 1px 50px;
     margin-top:0px;
+   }
+  .level22 {
+    background-image: linear-gradient(to right, #ebebeb , #f0f0f0);
+    grid-row: 2;
+    border-radius: 1px 50px 50px 1px;
+    margin-top:0px;
+    width: 60%;
+    height: 100%;
+    transition: width 5s;
+    }
+    .level22:hover {
+        width: 100%;
+    }
 
-  }
+    
 
-  .level3 {
-    background: #282828;
+    .level22:hover #i21 { 
+       transition: 7s ease;
+       opacity: 1;
+    } 
+
+
+
+  /* ==================================================================== */
+
+
+
+
+  .level31 {
+    background-image: linear-gradient(to right, #40404e , #2e2e36);
     grid-row: 3;
+    border-radius: 50px 1px 1px 50px;
     margin-top:0px;
+    margin-left:60%;
+    height:100%;
+    transition: 4s ease;
+    }
+   
+    .level31:hover  {
+           transition: 4s ease;
+           margin-left:0%;
+     }
 
+
+    .level31:hover #i31 {  
+    transition: 7s ease;
+       opacity: 1;
+    } 
+
+  
+  .level32 {
+    background-image: linear-gradient(to right, #2e2e36 , #242424);
+    grid-row: 3;
+    border-radius: 1px 50px 50px 1px;
+    margin-top:0px;
   }
 
 
 
+  /* ==================================================================== */
+  
+  
+  .level41 {
+    background-image: linear-gradient(to right, #cccccf , #ebebeb);
+    grid-row: 4;
+    border-radius: 50px 1px 1px 50px;
+    margin-top:0px;
+   }
+  .level42 {
+    background-image: linear-gradient(to right, #ebebeb , #f0f0f0);
+    grid-row: 4;
+    border-radius: 1px 50px 50px 1px;
+    margin-top:0px;
+    width: 60%;
+    height: 100%;
+    transition: width 5s;
+    }
+    .level42:hover {
+        width: 100%;
+    }
 
+    
+
+    .level42:hover #i41 { 
+       transition: 7s ease;
+       opacity: 1;
+    } 
+  
+  
+
+
+/*  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  .level12 #h11 {
+    animation: typing 3.5s steps(40, end);
+  }
+
+  .level12 #h11 {
+    animation: 
+      typing 3.5s steps(40, end),
+      
+  }
+ */
 
 
 #h11{
- font-size: 7vw;
- color: rgb(84, 117, 143) ;
- text-align: right;
- margin-top:5%;
- margin-bottom:0%;
- margin-right:40%;
+    font-size: 10vw;
+    margin-top:7%;
+    margin-bottom:0%;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
 
 }
+ 
+
 
 #h12{
-    font-size: 5vw;
-    color: rgb(227, 230, 56) ;
-    text-align: right;
-    margin-left:45%;
-    margin-top:0%;
-    margin-bottom:7%;
-    margin-right:40%;
-    
+    font-size: 9vw;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+	-webkit-background-clip: text;
+    writing-mode: vertical-rl; 
+    text-align: center;
 }
 
 #p11{
-    font-size: 0.7vw;
-    width: 35%;
+    font-size: 1vw;
+    width: 60%;
+    text-align: justify;
     color: whitesmoke ;
-    margin-left:52%;
-    margin-top: 0%;
+    margin-left:10%;
     margin-bottom:7%;
-    top:30%;
-   
-    
+    top:30%;   
 }
 
 #i11{
-    
-    margin-left:10%;
-bottom: 2em
-    max-width: 35%;
-    max-height: 35%;
 
+    margin-left:20%;
+    margin-top: 15%;
+    margin-bottom: 35%;
+    max-width: 45%;
+    max-height: 45%;
     z-index: 2;
-
+    
 }
+
+/* 
  @media (max-width: 600px){
      #i11{
         top: 10%;
-        max-width: 15%;
-        max-height: 15%;
+        max-width: 35%;
+        max-height: 35%;
+        margin-bottom: 3em;
 
      }
- }
+ } */
 
 
 
 
 
 
-#h21{
+#h21,#h41{
     font-size: 6vw;
     color: #282828 ;
-    margin-left:10%;
-    top:20%;
+    margin-left:20%;
+    margin-right: 20%;
     margin-bottom:0%;
 }
 
-#p21{
-    font-size: 0.7vw;
-    width: 35%;
+#p21,#p41{
+    font-size:2vw;
+    width: 45%;
+    text-align: justify;
     color: #282828 ;
     margin-top: 2%;
-    margin-left:10%;
-    margin-bottom:0%;
+    margin-left:20%;
+    margin-bottom:15%;
 }
    
 
-#i21{
-    margin-left:60%;
-    margin-top: 2%;
-    max-width: 25%;
-    max-height: 25%;
-    z-index: 0;
+#i21,#i41{
+    margin-left:30%;
+    margin-top:25%;
+    margin-bottom: 15%;
+    max-width: 45%;
+    max-height: 45%;
+    z-index: 2;
+    opacity: 0;
+    transition: 4s ease;
+    
 }
-
 
 
 
@@ -126,26 +245,32 @@ bottom: 2em
 #h31{
     font-size: 6vw;
     color: #c0b5a9 ;
-    margin-left:45%;
-    margin-top: 0%;
+    margin-left:10%;
+    margin-top:10%;
+    margin-bottom:7%;
+    
 }
 
 #p31{
-    font-size: 0.7vw;
-    width: 35%;
+    font-size: 2vw;
+    width: 60%;
+    text-align: justify;
     color: #c0b5a9 ;
     margin-top: 2%;
-    margin-left:45%;
-    margin-bottom:0%;
+    margin-left:10%;
+    margin-bottom:15%;
 }
 
 #i31{
-    margin-left:10%;
-    margin-top: 2%;
-    max-width: 30%;
-    max-height: 30%;
+    margin-left:25%;
+    margin-top:25%;
+    margin-bottom: 15%;
+    max-width: 45%;
+    max-height: 45%;
+    z-index: 2;
+    opacity: 0;
+    transition: 4s ease;
     
-    z-index: 0;
 }
 
 
@@ -161,7 +286,8 @@ bottom: 2em
 
 
 
-body { background: #fff; }
+
+body { background: rgb(255, 255, 255); }
 #wrapper {
     background: url(1px.png) repeat-y;
     background-size: 100% auto;
