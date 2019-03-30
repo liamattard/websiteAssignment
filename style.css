@@ -1,9 +1,48 @@
-/* :root{
+:root{
     --background:  #000000;
 }
 
 body{
     background-color: var(--background);
     font-family: 'Open Sans', sans-serif;
-} */
+}
 
+.homePage{
+    background-color: #dddd7e;
+    position: relative;
+    width: max-width;
+    height: 47vmax;
+    
+}
+.upper{
+    position: absolute;
+    width: 800px;
+    top: 48%;
+    left: 50%;
+    z-index: 99;
+    transform: translate(-50%, -50%);
+}
+.middle{
+    position: absolute;
+    width: 800px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom{
+    position: absolute;
+    width: 800px;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.titleText{
+    font-family: 'open-sans', sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 95px;
+    top: 45%;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
