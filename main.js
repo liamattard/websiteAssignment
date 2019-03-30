@@ -13,7 +13,11 @@ bottomObj.style.width = 800 + "px";
 bottomObj.style.top = 51 + "%";
 
 
+
+
 text = document.getElementById('titleText');
+
+text.style.opacity = 0;
 
 function spread() {
         if(parseInt(upperObj.style.top) >= 30){
@@ -41,23 +45,27 @@ function getSmaller(){
 
 function animation(){
     window.setInterval(middleSmall, 10);
-    middleObj.style.top =  parseInt(middleObj.style.top) + 0.5 + '%';
-    upperObj.style.top =  parseInt(middleObj.style.top) + 0.3 + '%';
-    bottomObj.style.top =  parseInt(middleObj.style.top) + 0.3 + '%';
+    middleObj.style.top =  parseFloat(middleObj.style.top) + 0.5 + '%';
+    upperObj.style.top =  parseFloat(middleObj.style.top) + 0.3 + '%';
+    bottomObj.style.top =  parseFloat(middleObj.style.top) + 0.3 + '%';
     window.setInterval(getSmaller, 2);
     window.setInterval(spread, 20);
-    
+    text.style.display = "block";
+    window.setInterval(showText, 250);
     
 }
 
 function showText(){
-    text.style.display = "block";
+    console.log(parseFloat(text.style.opacity));
+    if(parseFloat(text.style.opacity) <= 1){
+        text.style.opacity = parseFloat(text.style.opacity) + 0.1;
+    }
 }
 
 function init(){
     
     setTimeout(animation,5000);
-    setTimeout(showText,5500);
+   
 }
 
 window.onload = init;

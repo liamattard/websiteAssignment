@@ -7,7 +7,24 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* .imageBorder{
+    -webkit-filter: drop-shadow(1px 1px 0 black)
+    drop-shadow(-1px -1px 0 black);
+    filter: drop-shadow(1px 1px 0 black) 
+    drop-shadow(-1px -1px 0 black);
+} */
+
+.scrollArrow{
+    position: absolute;
+    width: 200px;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .homePage{
+  
     background-color: #dddd7e;
     position: relative;
     width: max-width;
@@ -15,6 +32,7 @@ body{
     
 }
 .upper{
+
     position: absolute;
     width: 800px;
     top: 48%;
@@ -40,9 +58,21 @@ body{
     font-family: 'open-sans', sans-serif;
     position: absolute;
     text-align: center;
-    font-size: 95px;
-    top: 45%;
-    left: 50%;
+    font-size: 100px;
+    top: 43%;
+    left: 51%;
     display: none;
     transform: translate(-50%, -50%);
+    /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
+    /* background-image: url(/assets/text4.gif);
+    background-size: cover;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    -moz-background-clip: text;
+    -webkit-background-clip: text; */
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    opacity: 0;
 }
