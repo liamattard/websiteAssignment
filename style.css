@@ -25,7 +25,7 @@ body{
 
 .homePage{
   
-    background-color: #dddd7e;
+    background-color: rebeccapurple;
     position: relative;
     width: max-width;
     height: 47vmax;
@@ -55,7 +55,8 @@ body{
     transform: translate(-50%, -50%);
 }
 .titleText{
-    font-family: 'open-sans', sans-serif;
+    /* font-family: 'open-sans', sans-serif; */
+    font-family: 'Baloo Chettan', cursive;
     position: absolute;
     text-align: center;
     font-size: 100px;
@@ -63,16 +64,16 @@ body{
     left: 51%;
     display: none;
     transform: translate(-50%, -50%);
-    /* background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif); */
-    /* background-image: url(/assets/text4.gif);
+    background-image: url(https://media.giphy.com/media/Cv7wrQjYcd6hO/giphy.gif);
+    /* background-image: url(/assets/text4.gif); */
     background-size: cover;
     color: transparent;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     -moz-background-clip: text;
-    -webkit-background-clip: text; */
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    -webkit-background-clip: text;
+    /* color: white; */
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
     opacity: 0;
 }
