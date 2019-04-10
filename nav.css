@@ -51,9 +51,9 @@ ul li:nth-child(1){
 }
 
 .burger-menu{
-    z-index: 9999;
+    z-index: 999999;
     top:2%;
-    position: absolute
+    position: fixed;
 }
 
 .toggle{
