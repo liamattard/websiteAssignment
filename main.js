@@ -64,7 +64,7 @@ function showText(){
 
 function init(){
     
-    setTimeout(animation,5000);
+    setTimeout(animation,4600);
    
 }
 
