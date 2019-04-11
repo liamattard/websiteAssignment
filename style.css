@@ -34,13 +34,13 @@ body{
   .level21 {
     background-image: linear-gradient(to right, #cccccf , #ebebeb);
     grid-row: 2;
-    border-radius: 50px 1px 1px 50px;
+    /* border-radius: 50px 1px 1px 50px; */
     margin-top:0px;
    }
   .level22 {
     background-image: linear-gradient(to right, #ebebeb , #f0f0f0);
     grid-row: 2;
-    border-radius: 1px 50px 50px 1px;
+    /* border-radius: 1px 50px 50px 1px; */
     margin-top:0px;
     width: 60%;
     height: 100%;
@@ -151,9 +151,10 @@ body{
     margin-bottom:0%;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
     background-size: cover;
+    width: 90%;
     color: transparent;
     -moz-background-clip: text;
-	-webkit-background-clip: text;
+	  -webkit-background-clip: text;
 
 }
  
@@ -162,10 +163,10 @@ body{
 #h12{
     font-size: 9vw;
     background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	background-size: cover;
+	  background-size: cover;
     color: transparent;
     -moz-background-clip: text;
-	-webkit-background-clip: text;
+	  -webkit-background-clip: text;
     writing-mode: vertical-rl; 
     text-align: center;
 }
