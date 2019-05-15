@@ -65,16 +65,29 @@ body {
     height: 50%;
 }
 
+p{  
+    font-size: 30px;
+    color: whitesmoke;
+    display: none;
+}
+
+.image:hover + p {
+    display: block;
+}
+
 .image{
     margin-top: 15%;
     width: 98%;
+    z-index: 2;
     /* height: 98%;; */
 }
 
 .price{
     position: absolute;
-    left: 300px;
-    right: 300px;
-    background-color: gold;
-    width: 2.5em;
+    color: #DCF4FD;
+    font-size: 40px;
+    background-color: #95B8CD;
+    border-radius: 50%;
+    border-width: 2%;
+    z-index: -1;
 }

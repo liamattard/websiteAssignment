@@ -1,10 +1,14 @@
-var elem = document.getElementById('price');    
+  
 
 document.addEventListener("mousemove",function(event){
-                
+    var elem = document.getElementById('price');
+    
     var x = event.clientX;
     var y = event.clientY;
-    
-    document.getElementById('position').le = " X = "+ x +"][ Y = "+ y;
-    elem.style = "left: " + x + "px";
+
+
+        elem.style.left =  x/10 + "px";
+        elem.style.top =  y/10 + "px";
+        elem.style.fontSize = x/40 +"px";
+
 });
