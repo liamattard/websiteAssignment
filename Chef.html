@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta chafont-size:50px;rset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"></link>
+    <link rel="stylesheet" href="ChefStyle.css"></link>
+    <title>Menu  </title>
+
+</head>
+
+<body>
+ 
+ <section class="container">
+
+
+        <div class="level1">
+            <article> 
+           
+                <div class="container">
+                    <div id="divform">
+                        <form action="/action_page.php">
+                        
+                             <div class="dropdown" style="float:left;">
+                                    <label for="name">Category</label><br>
+                                    <input  id= "course" class="dropbtn" placeholder ="Category..">
+                           
+                                    <div class="dropdown-content" style="left:0;">
+                                        <h4 onclick="myFunction('Starter')">Starter</h4>
+                                        <h4 onclick="myFunction('Burgers')">Burgers</h4>
+                                        <h4 onclick="myFunction('Wraps')">Wraps</h4>
+                                        <h4 onclick="myFunction('Desserts')">Desserts</h4>
+                                        <h4 onclick="myFunction('Drinks')">Drinks</h4>
+                                    </div>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                            <label for="name">Dish name</label>
+                            <input type="text" id="name" name="Item name" placeholder ="Dish name..">
+
+                            <label for="id">Dish id</label>
+                            <input type="text" id="id" name="Item id" placeholder ="Dish id..">
+
+                            <label for="price">Price</label>
+                            <input type="text" id="price" name="Item price" placeholder ="Price (€)..">
+
+                            <label for="description">Description</label>
+                            <input type="text" id="description" name="Item description" placeholder ="Description..">
+                            
+                        
+                            <input type="submit" value="Submit">
+                        </form>
+                    </div>
+
+                </div>
+                
+            </article>
+        </div>
+
+</section>
+
+
+<script>
+    function myFunction(x) {
+        document.getElementById("course").placeholder = x;
+    }
+</script> 
+
+</body>
+</html>

@@ -1,0 +1,132 @@
+body{
+
+    font-family: 'Open Sans', sans-serif ;
+    font-stretch: narrower;
+}
+
+
+
+body {
+  background-image:  linear-gradient(to right, #fbf9f6 , #e9dac5);;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 2vw;
+
+}
+
+#wrapper {
+    background: url(1px.png) repeat-y;
+    background-size: 100% auto;
+    width: 100%;
+    display: grid;
+}
+
+
+.container{
+    display: grid;
+    grid-row-gap: 0px;
+    height: 100%;
+    height: 100vh;
+    
+    box-shadow: 5px 10px 17px rgb(0, 0, 0);
+
+}
+.containerin {
+    display: grid;
+    grid-row-gap: 0px;
+    grid-auto-rows: 100%;
+    padding: 4vw;
+    grid-row: 4;
+    max-height:20%;
+    box-shadow: 5px 10px 17px rgb(0, 0, 0);
+    align-content: center;
+    background-image: linear-gradient(to right, #fbf9f6 , #c9af8bc4);
+
+}
+
+.containeritems{
+    display: grid;
+    grid-row: auto;
+    grid-auto-columns: 100%;
+    /* grid-row-gap: 5px */
+    max-width: 100%; 
+    
+    
+ 
+}
+
+
+.level1 {
+    grid-row: 1;
+    border-radius: 3vw 3vw 3vw 3vw;
+    background-color: rgb(214, 214, 214);
+    padding: 2vw;
+    max-height: 100%;
+
+    
+  }
+
+.column1{
+    grid-row: 1;
+    /* width: 100%; */
+    width: 80%;
+    height: 50%;
+    background-color: transparent;
+    overflow-x: scroll;
+    
+        
+}
+
+
+.itemx1,.itemx2,.itemx3{
+    grid-row: 1;
+    background-color:#c9af8bc4;
+    text-align: center; 
+    width: 80%;  
+
+}
+
+.column2 {
+    grid-row: 1;
+    height: 100%;
+    background-color: transparent;
+    max-height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+        
+}
+
+#plate{
+max-height: 20vw;
+
+
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    padding: 2vw;
+    height: 100%;
+    /* margin: 0vw 0vw 5vw 0vw; */
+    background-color: beige;
+  }
+  
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.itemx1:hover{
+    background-color: #efe8e3;
+      
+}
+.itemx2:hover{
+    background-color: #efe8e3;      
+}
+.itemx3:hover{
+    background-color: #efe8e3;
+     
+}
