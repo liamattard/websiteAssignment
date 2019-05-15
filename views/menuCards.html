@@ -1,0 +1,70 @@
+{ extends "menuChoice.html" }
+
+{ block content }
+
+<section class="container">
+
+    <div class="level1">
+        <article>
+            <h1 id="h11">
+                Hungry?!
+            </h1>
+
+            <p id="p11">Good, we're here to <b> serve </b> you!
+            </p>
+        </article>
+    </div>
+
+
+    { for food in food }
+    <br>{{ food.name }}
+    { endfor }
+
+    <div class="level2">
+
+        <section class="burgers">
+
+            <div class="burger1">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img id="burger" src="assets/burger1.jpg">
+                        </div>
+                        <div class="flip-card-back">
+                            <h1>
+                                INGREDIENTS <br><br>
+                                4 hamburger patties<br>
+                                kosher salt<br>
+                                Freshly ground black pepper<br>
+                                4 slices cheddar<br>
+                                8 slices bacon<br>
+                                4 Hamburger buns<br>
+                                2 tablespoons mayonnaise<br>
+                                4 pieces lettuce<br>
+                                4 tomato slices<br>
+
+
+                            </h1>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="level4">
+                <article>
+                    <h1 id="link">
+                        <a
+                            href="file:///C:/Users/Gabriele/Desktop/Web%20Application/restaurantWebsite/websiteAssignment/menu.html">Build
+                            It Yourself!</a>
+                    </h1>
+                </article>
+            </div>
+
+
+
+
+        </section>
+
+{ endblock content }

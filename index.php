@@ -11,7 +11,7 @@
 
     $twig->setLexer($lexer);
 
-    echo $twig->render('menuPage.html',array(
+    echo $twig->render('menuChoice.html',array(
         'name' => 'Liam',
         'age' => 52,
         'users' => array(
