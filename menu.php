@@ -2,6 +2,7 @@
     session_start();    
     require 'vendor/autoload.php';
 
+    //server connection
     $servername = 'localhost';
     $username = 'root';
     $password = '';
@@ -37,8 +38,7 @@
         // output data of each row
 
         while($row = $result->fetch_assoc()) {
-            $food[$counter] = array('name' => $row["name"], 'category' => $row["category"]);
-            // echo "id: " . $row["id"]. " - Name: " . $row["category"]. " " . $row["name"]. " " . $row["price"]. "<br>";
+            $food[$counter] = array('name' => $row["name"], 'category' => $row["category"], 'price' => $row["price"], 'image'=>$row["img"],  'colour' => $row["background_colour"]);
             $counter = $counter +1;
         }
     } else {
@@ -46,9 +46,9 @@
     }
 
     
-    include('views/menuChoiceStyle.css');
-    echo $twig->render('menuChoice.html',['food' => $food]);
-    // include('views/menuChoice.html');
+
+    echo $twig->render('menuPage.html',['food' => $food]);
+
 
 
     $conn->close();

@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     </link>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="menuChoiceStyle.css">
+    <link rel="stylesheet" href="./views/menuChoiceStyle.css">
     </link>
     <title>Menu </title>
 
 </head>
 <section class="container">
 
-    <div class="level1">
+    <!-- <div class="level1">
         <article>
             <h1 id="h11">
                 Hungry?!
@@ -25,14 +23,20 @@
             <p id="p11">Good, we're here to <b> serve </b> you!
             </p>
         </article>
+    </div> -->
+
+
+    <div class="left item">
+        <div class="centered">
+            <img src="{{ food[0].image }}" alt="Avatar woman">
+            <h2>{{ food[0].name }}</h2>
+            <p>{{ food[0].category }}</p>
+        </div>
     </div>
 
 
-   
-    
-    
 
-    <div class="level2">
+    <!-- <div class="level2">
 
         <section class="burgers">
             { for food in food }
@@ -40,7 +44,7 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                         <div class="flip-card-front">
-                            <img id="burger" src="assets/burger1.jpg">
+                            <img id="burger" src="{{ food.image }}">
                             <p>{{ food.name }}</p>
                         </div>
                         <div class="flip-card-back">
@@ -62,25 +66,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>  -->
 
             { endfor }
-            <div class="level4">
-                <article>
-                    <h1 id="link">
-                        <a
-                            href="file:///C:/Users/Gabriele/Desktop/Web%20Application/restaurantWebsite/websiteAssignment/menu.html">Build
-                            It Yourself!</a>
-                    </h1>
-                </article>
-            </div>
 
 
 
 
         </section>
 
-<body>
-</body>
+        <body>
+        </body>
 
 </html>
