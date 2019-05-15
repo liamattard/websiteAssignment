@@ -1,15 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>8Bit Burger</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="gabriele.css">
+   
+  
 </head>
+
 <body>
-    <form action="welcome.php" method = "Post">
-    Enter your name: <input name="name" type="text">
-    <input type="submit" value="submit">
-    </form>
-</body>
+        <input type="checkbox" id="toggle" class="toggle">
+        <label for="toggle" class="burger-menu">
+                <span>
+                    <img src="assets/burgerMenu.png" alt="Menu">
+                </span>
+            </label>
+    <nav>
+        <ul>
+            
+            <li><a href="#"><img src="assets/logo.png" alt="menu" class="logo"></a></li>
+            <li><a href="#"><strong>Home</strong></a></li>
+            <li><a href="#"><strong>Menu</strong></a></li>
+            <li><a href="#aboutUs"><strong>About</strong></a></li>
+            <li><a href="#"><strong>Contact</strong></a></li>
+            
+        </ul>
+    </nav>
+
+
+    <div class="homePage">
+            <div><img id="upper" src="assets/topBun.png" alt="Top Burger" class="upper imageBorder"></div>
+            <div><img id="middle" src="assets/Middle.png" alt="Middle Burger" class="middle imageBorder"></div>
+            <div><img id="bottom" src="assets/bottomBun.png" alt="Bottom Burger" class="bottom imageBorder"></div>
+            <div><img id="landing"src="assets/landing.gif" alt="Smoke" class = "smoke imageBorder"></div>
+            <strong><p class="titleText" id="titleText" >8BIT <br><br> BURGER</p></strong>
+            <a href="#aboutUs"><img class = "scrollArrow" src="assets/scrollarrow2.gif"></a>
+            </div>
+        
+        
+            <script src="main.js"></script>
+
+
+
+
+
+
 </html>
+
