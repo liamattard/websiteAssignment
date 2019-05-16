@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./views/menuPageStyle.css">
+    <script type="text/javascript" src="./views/movement.js"></script>
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="split left">
+            <h2>{{ food[0].name }}</h2>
+            <img id="primaryImage" src="{{ food[0].image }}" class="image">
+            <div id="price" class="price"><h1>€{{ food[0].price }}</h1></div>
+            
+
+        </div>
+
+        <div class="split right">
+            <div class="centered_right">
+                { for food in food|slice(1) }
+                <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
+                
+                <div> <a href="http://www.yahoo.com"> <img src="views/assets/heart.png" class="fav"> </a> </div>
+
+                <p>{{ food.name }}</p>
+                </div>
+                { endfor }
+                <div></div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+</html>
