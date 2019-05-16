@@ -4,16 +4,18 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./views/menuPageStyle.css">
+    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="./views/movement.js"></script>
+
 </head>
 
 <body>
 
     <div id="container">
         <div class="split left">
-            <h2>{{ food[0].name }}</h2>
-            <img src="{{ food[0].image }}" class="image">
-            <div id="price" class="price"><h1>€{{ food[0].price }}</h1></div>
+            <h1>{{ food[0].name }}</h1>
+            <img id="primaryImage" src="{{ food[0].image }}" class="image">
+            
             
 
         </div>
@@ -21,9 +23,14 @@
         <div class="split right">
             <div class="centered_right">
                 { for food in food|slice(1) }
-                <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="image">
+                { if food.category == 2 }
+                <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
+                
+                <div> <a href="http://www.yahoo.com"> <img src="views/assets/heart.png" class="fav"> </a> </div>
+
                 <p>{{ food.name }}</p>
                 </div>
+                { endif }
                 { endfor }
                 <div></div>
 
@@ -33,5 +40,5 @@
     </div>
 
 
-
+</body>
 </html>
