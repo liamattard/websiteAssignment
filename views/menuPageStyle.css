@@ -1,7 +1,8 @@
 
 body {
   font-family: Arial;
-  background-color: whitesmoke;
+  background-color: #BAFFC9;
+  align-content: center;
 }
 
 
@@ -11,7 +12,6 @@ body {
   width: 50%;
   position: fixed;
   z-index: 1;
-  top: 0;
   overflow-x: hidden;
   padding-top: 20px;
   
@@ -67,21 +67,60 @@ body {
 }
 
 p{  
-    font-size: 30px;
-    color: whitesmoke;
-    display: none;
+    position: absolute;
+    font-size: 25px;
+    color: rgb(44, 26, 26);
+    margin-left: 2vw;
+    margin-top: 7%;
+    z-index: 1;
+    /* display: none; */
 }
 
-.image:hover + p {
-    display: block;
+.fav{
+  position: absolute;
+  margin-left: 5vw;
+  margin-top: 0%;
+  width: 3.5vw;
+  z-index: 3;
+  opacity: 0.8;
 }
+
+.fav:hover{
+  position: absolute;
+  transition: ease 0.3s;
+  margin-left: -7vw;
+  margin-top: -28%;
+  width: 15vw;
+  z-index: 4;
+  opacity: 1;
+}
+
+
+
 
 .image{
+    position: absolute;
     margin-top: 3%;
     width: 98%;
     z-index: 2;
     /* height: 98%;; */
 }
+
+.imagebox{
+  margin-top: 3%;
+  width: 90%;
+  z-index: 2;
+  transition: ease-in-out 0.3s;
+}
+
+.imagebox:hover + .p{
+  margin-top: 3%;
+  width: 98%;
+  z-index: 2;
+  transition: ease-in 0.3s;
+   
+}
+
 
 .price{
     position: absolute;
@@ -106,4 +145,10 @@ h2{
     color: transparent;
     -moz-background-clip: text;
     -webkit-background-clip: text;
+}
+
+#primaryImage{
+  position: absolute;
+  top: 0%;
+  margin-top: 25%;
 }
