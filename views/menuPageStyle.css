@@ -18,6 +18,7 @@ body {
 }
 
 .left {
+  overflow-y:hidden;
   top: 2%;
   left: 2%;
   height: 85%;
@@ -76,7 +77,7 @@ p{
 }
 
 .image{
-    margin-top: 15%;
+    margin-top: 3%;
     width: 98%;
     z-index: 2;
     /* height: 98%;; */
@@ -90,4 +91,19 @@ p{
     border-radius: 50%;
     border-width: 2%;
     z-index: -1;
+}
+
+h1{
+    text-align:center;
+    font-size: 40px;
+    color: whitesmoke;
+}
+h2{
+    text-align:center;
+    font-size: 80px;
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
 }
