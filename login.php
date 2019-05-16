@@ -38,7 +38,7 @@ session_start();
             </label>
             <input type="password" name="password" placeholder="Password" id="password" required>
             <input type="submit" value="Login">
-            <a href="/websiteAssignment/phplogin/register.php">Don't have an account, register now?</a>
+            <a href="/websiteAssignment/register.php">Don't have an account, register now?</a>
         </form>
     </div>
 
