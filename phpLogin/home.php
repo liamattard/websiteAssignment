@@ -26,6 +26,11 @@ if (!isset($_SESSION['loggedin'])) {
 </head>
 
 <body>
+        <?php
+            echo '<div style = "color:white">';
+            echo $_SESSION['name'];
+            echo '</div">';
+        ?>
         <input type="checkbox" id="toggle" class="toggle">
         <label for="toggle" class="burger-menu">
                 <span>
