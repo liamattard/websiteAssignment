@@ -46,7 +46,7 @@ session_start();
             <input type="text" name="email" placeholder="email" id="email" required>
 
             <input type="submit" value="Register">
-
+            <a href="/websiteAssignment/login.php">Already have an account, login now</a>
 
         </form>
     </div>

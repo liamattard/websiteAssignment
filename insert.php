@@ -20,7 +20,7 @@ $resultCheck = mysqli_num_rows($result);
 $found = false;
 
 if ($resultCheck > 0) {
-    echo "lkjh";
+
     while ($row = mysqli_fetch_assoc($result)) {
 
         if ($_POST['username'] == $row['username'] || $_POST['email'] == $row['email']) {
@@ -29,8 +29,8 @@ if ($resultCheck > 0) {
             $found = true;
         }
     }
-} if ($found == flase) {
-    echo "lkjh";
+} if ($found == false) {
+
     $sql2 = "INSERT INTO accounts (username, password, email) 
                             VALUES ('$_POST[username]','$_POST[password]','$_POST[email]')";
 
@@ -38,7 +38,7 @@ if ($resultCheck > 0) {
 
         die('Error: ' . mysqli_error($connect));
     }
-    header('Location: index.php');
+    header('Location: ./login.php');
 }
 
 

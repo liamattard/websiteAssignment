@@ -21,14 +21,13 @@ session_start();
         <h1>Login</h1>
         <?php
 
-            if (isset($_SESSION["error"])) {
-                echo '<h2 align="center" style="color: white; font-size:30px;"   >Incorrect details</h2>';
+        if (isset($_SESSION["error"])) {
+            echo '<h2 align="center" style="color: white; font-size:30px;"   >Incorrect details</h2>';
+        }
 
-            }
-
-            ?>
+        ?>
         <form action="authenticate.php" method="post">
-            
+
             <label for="username">
                 <i class="fas fa-user"></i>
             </label>
@@ -38,8 +37,11 @@ session_start();
             </label>
             <input type="password" name="password" placeholder="Password" id="password" required>
             <input type="submit" value="Login">
-            <a href="/websiteAssignment/register.php">Don't have an account, register now?</a>
+
         </form>
+        <a href="/websiteAssignment/register.php">Don't have an account, register now</a>
+        <br>
+        <a href="/websiteAssignment/homePage.php">Continue as Guest</a>
     </div>
 
 
@@ -48,5 +50,5 @@ session_start();
 </html>
 
 <?php
-    unset($_SESSION["error"]);
+unset($_SESSION["error"]);
 ?>

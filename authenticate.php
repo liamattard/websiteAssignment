@@ -29,11 +29,11 @@ if ($resultCheck > 0) {
             $_SESSION['id'] = $id;
             $found = TRUE;
 
-            header('Location: home.php');
+            header('Location: homePage.php');
         }
     }
 }
 if ($found == false) {
     $_SESSION['error'] = "error";
-    header('Location: index.php');
+    header('Location: login.php');
 }
