@@ -33,7 +33,7 @@ session_start();
             <label for="username">
                 <i class="fas fa-user"></i>
             </label>
-            <input type="text" name="username" placeholder="Email" id="username" required>
+            <input type="text" name="username" placeholder="username" id="username" required>
 
             <label for="password">
                 <i class="fas fa-lock"></i>
@@ -43,7 +43,7 @@ session_start();
             <label for="email">
                 <i class="fas fa-envelope"></i>
             </label>
-            <input type="email" name="email" placeholder="email" id="email" required>
+            <input type="text" name="email" placeholder="email" id="email" required>
 
             <input type="submit" value="Register">
 
