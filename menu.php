@@ -46,12 +46,17 @@
     }
 
     
+$loggedIn = false;
+$_SESSION['foodname'] = null;
 
-    echo $twig->render('menuPage.html',['food' => $food]);
+if (isset($_SESSION["name"])) {
+    $loggedIn = true;
+    echo $twig->render('menuPage.html', ['loggedIn' => $loggedIn, 'user' => $_SESSION["name"], 'page' => false,'food' => $food,]);
 
+} else {
+    echo $twig->render('menuPage.html', ['loggedIn' => $loggedIn,'food' => $food,]);
+
+}
 
 
     $conn->close();
-
-    ?> 
-    

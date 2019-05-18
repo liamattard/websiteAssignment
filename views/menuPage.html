@@ -12,12 +12,15 @@
         <div class="centered_right">
             { for food in food|slice(1) } { if food.category == 2 }
             <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
-
                 <div>
-                    <a href="http://www.yahoo.com"> <img src="views/assets/heart.png" class="fav"> </a>
+                    <form action="./favourites.php" method="POST">
+                        <input name="foodname" type="text" value="{{ food.name }}">
+                        <input type="submit">
+                    </form>
+                    <!-- <a href="/websiteAssignment/favourites.php"> <img src="views/assets/heart.png" class="fav"> </a> -->
                 </div>
 
-                <p>{{ food.name }}</p>
+                <!-- <p>{{ food.name }}</p> -->
             </div>
             { endif } { endfor }
             <div></div>

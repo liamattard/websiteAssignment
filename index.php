@@ -13,16 +13,15 @@ $lexer = new Twig_Lexer($twig, array(
 
 $twig->setLexer($lexer);
 
-
-
-
-
-
 $loggedIn = false;
-
 
 if (isset($_SESSION["name"])) {
     $loggedIn = true;
-     }
+    echo $twig->render('homePage.html', ['loggedIn' => $loggedIn, 'user' => $_SESSION["name"], 'page' => true]);
 
-echo $twig->render('homePage.html', ['loggedIn' => $loggedIn, 'user'=> $_SESSION["name"]]);
+} else {
+    echo $twig->render('homePage.html', ['loggedIn' => $loggedIn,'page' => true]);
+
+}
+
+?>
