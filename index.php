@@ -1,23 +1,28 @@
 <?php
-    require 'vendor/autoload.php';
+session_start();
+require './vendor/autoload.php';
 
-    $loader = new Twig_Loader_Filesystem('views');
-    $twig = new Twig_Environment($loader);
 
-    $lexer = new Twig_Lexer($twig,array(
-        'tag_block'      => array('{','}'),
-        'tag_variable'   => array('{{','}}')
-    ));
+$loader = new Twig_Loader_Filesystem('views');
+$twig = new Twig_Environment($loader);
 
-    $twig->setLexer($lexer);
+$lexer = new Twig_Lexer($twig, array(
+    'tag_block'      => array('{', '}'),
+    'tag_variable'   => array('{{', '}}')
+));
 
-    echo $twig->render('menuChoice.html',array(
-        'name' => 'Liam',
-        'age' => 52,
-        'users' => array(
-            array('name'=>'Tom',"age"=>1999),
-            array('name'=>'To66     m',"age"=>00),
-            array('name'=>'6',"age"=>66),
-        )
-    ));
+$twig->setLexer($lexer);
 
+
+
+
+
+
+$loggedIn = false;
+
+
+if (isset($_SESSION["name"])) {
+    $loggedIn = true;
+     }
+
+echo $twig->render('homePage.html', ['loggedIn' => $loggedIn, 'user'=> $_SESSION["name"]]);

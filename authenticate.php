@@ -29,7 +29,7 @@ if ($resultCheck > 0) {
             $_SESSION['id'] = $id;
             $found = TRUE;
 
-            header('Location: homePage.php');
+            header('Location: index.php');
         }
     }
 }

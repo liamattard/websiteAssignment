@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,28 +7,21 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-    <link href="homeStyle.css" rel="stylesheet" type="text/css">
+    <link href="./views/homeStyle.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 
 <body>
     <ul>
-        <li><a href="./menu.php">Menu <i class="fa fa-hamburger"></i></a></li>
+        <li><a href="menu.php">Menu <i class="fa fa-hamburger"></i></a></li>
         <li><a href="menu.asp">Contact Us <i class="fa fa-phone"></i></a></li>
         <li style="float:right"><a href="contact.asp">Book A Table <i class="fa fa-calendar-minus"></i></a></li>
-        <?php
-       if (isset($_SESSION["name"])) {
-        echo '<li style="float:right"><a href="./logout.php">logout <i class="fa fa-sign-out-alt"></i></a></li>';
-        echo '<li style="float:right"><a href="about.asp">';
-        echo $_SESSION["name"];
-        echo '  <i class="fa fa-user"></i></a></li>';
-        
-       
-         }else{
-         echo '<li style="float:right"><a href="./login.php">login <i class="fa fa-user"></i></a></li>';
-          }
-       ?>
-
+        { if loggedIn == true }
+        <li style="float:right"><a href="logout.php">logout <i class="fa fa-sign-out-alt"></i></a></li>
+        <li style="float:right"><a href="about.asp"> welcome, {{ user }} <i class="fa fa-user"></i></a></li>
+        { else }
+        <li style="float:right"><a href="./login.php">login <i class="fa fa-user"></i></a></li>
+        { endif }
     </ul>
     <div>
         <div wrapper ' style=' text-align: center; '>
@@ -43,7 +32,7 @@ session_start();
             <button class="button">Book a table now!</button>
         </div>
         <div style='display: inline-block; vertical-align: top;'>
-            <img src="./assets/chef.gif" alt="chef image" style=" width: 150%;">
+            <img src="./views/assets/chef.gif" alt="chef image" style=" width: 150%;">
         </div>
 
     </div>
