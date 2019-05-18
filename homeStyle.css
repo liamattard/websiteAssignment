@@ -1,0 +1,55 @@
+body {
+    background-color: #FCD24A;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+    font-size: 2vw;
+}
+
+li a {
+    display: block;
+    color: #484848;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    transform: rotate(180deg);
+    transition-duration: 0.05s;
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+div {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #ED5847;
+    font-size: 20px;
+    color: aliceblue;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 50%;
+}

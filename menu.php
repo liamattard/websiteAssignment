@@ -6,7 +6,7 @@
     $servername = 'localhost';
     $username = 'root';
     $password = '';
-    $dbname = '8bitburger';
+    $dbname = '8bitBurger';
 
 
     $loader = new Twig_Loader_Filesystem('views');
