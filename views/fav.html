@@ -1,0 +1,8 @@
+{ extends "base.html" } { block style } ./views/homeStyle.css { endblock } { block content }
+<h1>Your Favourites: </h1>
+{ for fav in fav }
+
+<h2>{{ fav.name }}</h2>
+{ endfor }
+
+{ endblock }

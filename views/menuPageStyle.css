@@ -51,7 +51,7 @@ li a:hover {
 
 .left {
     overflow-y: hidden;
-    top: 10%;
+    top: 19%;
     left: 2%;
     height: 85%;
     background-color: #afeeee;
@@ -59,7 +59,7 @@ li a:hover {
 }
 
 .right {
-    top: 10%;
+    top: 19%;
     height: 85%;
     right: 2%;
     width: 46.05%;
@@ -182,3 +182,12 @@ h1 {
     background: grey;
     border-radius: 10px;
 }
+
+.grey {
+    filter: grayscale(100%);
+}
+
+.hidden {
+    display: none;
+}
+
