@@ -90,7 +90,7 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMqECPd8G0UAzExZpjDSdt4R
         
         
 
-        <form class = "contact-form" action = "insert.php" method = "post">
+        <form class = "contact-form" action = "insertcontact.php" method = "post">
              <input type = "text" name = "name" placeholder = "Name..." class = "nametext">
              <input type = "text" name = "surname" placeholder = "Surname..." class = "surnametext">
              <input type = "text" name = "email" placeholder = "E-mail..." class = "emailtext">
