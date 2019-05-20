@@ -1,0 +1,53 @@
+{ extends "base.html" } { block style } ./views/contactstyle.css { endblock } { block content }
+
+
+<body>
+
+    <h1>Contact Us </h1>
+    <h2> We would like to hear from you! </h2>
+
+    <div id="map"></div>
+    <script type="text/javascript" src="./views/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMqECPd8G0UAzExZpjDSdt4RmtapT3MI&callback=initMap">
+    </script>
+
+    <p>
+        <h3>Find us </h3>
+        <address> 8-Bit Burger<br>
+                Triq il- Gvernatur<br>
+                Comino
+
+    </address>
+        <h4> Contact us</h4>
+        <p class="contact">
+            Call us on <br> +356 21938573
+        </p>
+        <h5> Opening Hours </h5>
+        <p class="opening">
+
+            Monday-Sunday <br> 10:00-23:00
+
+        </p>
+
+
+
+
+
+    </p>
+
+
+
+
+
+    <form class="contact-form" action="./insertcontact.php" method="post">
+        <input type="text" name="name" placeholder="Name..." class="nametext">
+        <input type="text" name="surname" placeholder="Surname..." class="surnametext">
+        <input type="text" name="email" placeholder="E-mail..." class="emailtext">
+        <input type="text" name="subject" placeholder="Subject..." class="subjecttext">
+        <textarea name="message" placeholder="Message" rows="7" cols="50"></textarea>
+        <input type="submit">
+    </form>
+
+
+    </main>
+    { endblock }

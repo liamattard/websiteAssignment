@@ -1,0 +1,146 @@
+body{
+
+    background-color: #FCD24A;
+    font-family: 'Baloo Bhai', cursive;
+    color:white;
+}
+h1{
+
+    position: relative;
+    color: white;
+    left: 43%;
+    top:20%;
+
+}
+h2
+{
+    position: relative;
+    font-size: 100%;
+    color: white;
+    left: 32%;
+    top:25%;
+
+
+}
+input[type = text]{
+
+    border: 2px #bccd00;
+    border-radius: 4px;
+    width: 30%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+
+}
+input[type = submit]{
+
+    position: absolute;
+    border: 2px #bccd00;
+    width: 10%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+    top: 115%;
+    left:45%;
+}
+input[type = date]{
+
+    border: 2px #bccd00;
+    border-radius: 4px;
+    width: 10%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+    
+
+}
+input[type = time]{
+
+    border: 2px #bccd00;
+    border-radius: 4px;
+    width: 10%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+    
+
+}
+textarea
+{
+    position: absolute;
+    border: 2px #bccd00;
+    border-radius: 4px;
+    background-color:rgb(71, 71, 71);
+    left: 35%;
+    top:80%;
+
+
+}
+.nametext
+{
+    position: absolute;
+    left: 35%;
+    top:30%;
+
+}
+.surnametext
+{
+    position: absolute;
+    left:35%;
+    top:40%;
+
+}
+.telephonetext
+{
+    position: absolute;
+    left:35%;
+    top:50%;
+
+}
+.emailtext
+{
+    position: absolute;
+    left:35%;
+    top: 60%;
+
+}
+.date
+{
+    position: absolute;
+    left:38%;
+    top: 70%;
+
+
+}
+.time
+{
+    position: absolute;
+    left:52%;
+    top: 70%;
+
+
+}
+
+ul {
+    
+    list-style-type: none;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+    font-size: 2vw;
+}
+
+li a {
+    display: block;
+    color: #484848;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    transform: rotate(180deg);
+    transition-duration: 0.05s;
+}
