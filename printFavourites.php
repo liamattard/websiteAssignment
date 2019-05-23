@@ -19,6 +19,8 @@ include_once 'connection.php';
 
 $d = new Db();
 $connect = $d->connect();
+$count = 1;
+$concatFav = array();
 
 
 if (mysqli_connect_errno()) {
@@ -54,6 +56,8 @@ if (!isset($_SESSION["loggedin"])) {
     $resultCheck = mysqli_num_rows($result);
     $fav = array();
     $counter = 0;
+    $msg = "Your Favourites are";
+    
 
 
     if ($resultCheck > 0) {
@@ -67,21 +71,43 @@ if (!isset($_SESSION["loggedin"])) {
                 $resultCheck2 = mysqli_num_rows($result2);
                 if ($resultCheck2 > 0) {
         
+                    
                     while ($row2 = mysqli_fetch_assoc($result2)) {
                         if($row2["id"] == $row["food_ID"]){
                             $fav[$counter] = array('name' => $row2["name"]);
+                            echo $row2["name"];
+                            $msg = $msg ."\n". $row2["name"];
+
+                    
+                            
                         }
                     }
                        
         
                 $counter = $counter + 1;
             }
+
+            
+            
      
             }
         }
+
+    
+
+
     }
 
+
+
 }
+
+
+
+mail("gatt.corinne@gmail.com", "Your Favourites", $msg);
+
+
+
 echo $twig->render('fav.html', ['loggedIn' => $loggedIn, 'user' => $_SESSION["name"], 'page' => true,'fav' => $fav]);
 
     mysqli_close($connect);
