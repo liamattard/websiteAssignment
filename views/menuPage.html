@@ -9,10 +9,10 @@
 
 
 <div id="container">
-    { set image = "" }{ set like = "" }{ set num = 0 } { set first = "" } { set break = false } { for food in food if not break } { set num = num + 1 } { if food.category == display } { set first = food.name } { set image = food.image } { set like = food.likeButton } { set break = true } { endif } { endfor }
+    { set image = "" }{ set colour = "" }{ set like = "" }{ set num = 0 } { set first = "" } { set break = false } { for food in food if not break } { set num = num + 1 } { if food.category == display } { set first = food.name }{ set colour = food.colour } { set image = food.image } { set like = food.likeButton } { set break = true } { endif } { endfor }
 
 
-    <div class="split left">
+    <div style="background-color:#{{ colour }}" class="split left">
         <h1>{{ first }}</h1>
 
         <img id="primaryImage" src="{{ image }}" class="image">
