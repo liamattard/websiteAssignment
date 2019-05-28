@@ -1,0 +1,184 @@
+
+body{
+    background-color: #FCD24A;
+    font-family: 'Baloo Bhai', cursive;
+    color:white;
+}
+h1{
+
+    position: relative;
+    color: white;
+    left: 43%;
+    top:20%;
+
+}
+h2
+{
+    position: relative;
+    font-size: 100%;
+    color: white;
+    left: 40%;
+    top:25%;
+
+
+}
+h3
+{
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 25%;
+    top:70%;
+
+
+}
+h4
+{
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 42%;
+    top:70%;
+
+
+}
+h5
+{
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 60%;
+    top:70%;
+
+
+}
+.opening
+{
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 60%;
+    top:80%;
+
+}
+.contact
+{
+
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 42%;
+    top:80%;
+
+
+}
+
+address
+{
+    position: absolute;
+    font-size: 100%;
+    color: white;
+    left: 25%;
+    top:80%;
+
+
+
+}
+#map
+{
+
+    height: 300px;
+    width: 100%;
+
+
+}
+
+input[type = text]{
+
+    border: 2px #bccd00;
+    border-radius: 4px;
+    width: 30%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+
+}
+input[type = submit]{
+
+    position: absolute;
+    border: 2px #bccd00;
+    width: 10%;
+    height: 5%;
+    background-color:rgb(71, 71, 71);
+    top: 160%;
+    left:45%;
+}
+
+textarea
+{
+    position: absolute;
+    border: 2px #bccd00;
+    border-radius: 4px;
+    background-color:rgb(71, 71, 71);
+    left: 35%;
+    top:140%;
+
+
+}
+.nametext
+{
+    position: absolute;
+    left: 35%;
+    top:100%;
+
+}
+.surnametext
+{
+    position: absolute;
+    left:35%;
+    top:110%;
+
+}
+.emailtext
+{
+    position: absolute;
+    left:35%;
+    top: 120%;
+
+}
+.subjecttext
+{
+    position: absolute;
+    left:35%;
+    top: 130%;
+
+
+}
+
+
+ul {
+    
+    list-style-type: none;
+    margin-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+li {
+    float: left;
+    font-size: 2vw;
+}
+
+li a {
+    display: block;
+    color: #484848;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    transform: rotate(180deg);
+    transition-duration: 0.05s;
+}

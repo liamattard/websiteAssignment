@@ -1,44 +1,52 @@
-<!DOCTYPE html>
-<html>
+{ extends "base.html" } { block style } ./views/menuPageStyle.css { endblock } { block content } { for catagories in catagories }
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./views/menuPageStyle.css">
-    <link href='http://fonts.googleapis.com/css?family=Lobster+Two' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="./views/movement.js"></script>
 
-</head>
+<form action="./menu.php" method="POST" style=" float:left; padding: 1%; ">
+    <input id="button" type="submit" value="{{ catagories.name }}">
+    <input class="hidden" name="categoryShow" type="text" value="{{ catagories.id }}">
+</form>
+{ endfor }
 
-<body>
 
-    <div id="container">
-        <div class="split left">
-            <h1>{{ food[0].name }}</h1>
-            <img id="primaryImage" src="{{ food[0].image }}" class="image">
-            
-            
+<div id="container">
+    { set image = "" }{ set colour = "" }{ set like = "" }{ set num = 0 } { set first = "" } { set break = false } { for food in food if not break } { set num = num + 1 } { if food.category == display } { set first = food.name }{ set colour = food.colour } { set image = food.image } { set like = food.likeButton } { set break = true } { endif } { endfor }
 
-        </div>
 
-        <div class="split right">
-            <div class="centered_right">
-                { for food in food|slice(1) }
-                { if food.category == 2 }
-                <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
-                
-                <div> <a href="http://www.yahoo.com"> <img src="views/assets/heart.png" class="fav"> </a> </div>
+    <div style="background-color:#{{ colour }}" class="split left">
+        <h1>{{ first }}</h1>
 
-                <p>{{ food.name }}</p>
+        <img id="primaryImage" src="{{ image }}" class="image">
+        <form action="./favourites.php" method="POST">
+            <input class="hidden" name="foodname" type="text" value="{{ first }}"> { if like == "grey" }
+
+            <input class="fav grey" type="image" src="views/assets/heart.png" border="0" alt="Submit" /> { else }
+
+            <input class="fav" type="image" border="0" src="views/assets/heart.png" alt="Submit" /> { endif }
+        </form>
+    </div>
+    <div class="split right">
+        <div class="centered_right">
+            { for food in food|slice(num) } { if food.category == display }
+            <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
+                <div>
+
+                    <form action="./favourites.php" method="POST">
+                        <input class="hidden" name="foodname" type="text" value="{{ food.name }}"> { if food.likeButton == "grey" }
+
+                        <input class="fav grey" type="image" src="views/assets/heart.png" border="0" alt="Submit" /> { else }
+
+                        <input class="fav" type="image" border="0" src="views/assets/heart.png" alt="Submit" /> { endif }
+                    </form>
+                    <p>{{ food.name }}</p>
                 </div>
-                { endif }
-                { endfor }
-                <div></div>
+
 
             </div>
-        </div>
+            { endif } { endfor }
+            <div></div>
 
+        </div>
     </div>
 
-
-</body>
-</html>
+</div>
+{ endblock }

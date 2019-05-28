@@ -41,7 +41,7 @@ session_start();
         </form>
         <a href="/websiteAssignment/register.php">Don't have an account, register now</a>
         <br>
-        <a href="/websiteAssignment/homePage.php">Continue as Guest</a>
+        <a href="/websiteAssignment/index.php">Continue as Guest</a>
     </div>
 
 

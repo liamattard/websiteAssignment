@@ -1,0 +1,1 @@
+ErrorDocument 404 http://localhost/websiteAssignment/views/Error404.html

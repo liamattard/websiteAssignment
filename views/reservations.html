@@ -1,0 +1,25 @@
+{ extends "base.html" } { block style } ./views/reservationstyle.css { endblock } { block content }
+
+<h1 >Book a Table </h1>
+
+<form class = "reservation-form" action = "insertreserv.php" method = "post">
+             <input type = "text" name = "name" placeholder = "Name..." class = "nametext">
+             <input type = "text" name = "surname" placeholder = "Surname..." class = "surnametext">
+             <input type = "text" name = "telephone" placeholder =" Telephone..." class = "telephonetext">
+             <input type = "text" name = "email" placeholder = "E-mail..."  class = "emailtext">
+             <input type = "date" name = "date" class="date">
+             <input type = "time" name = "time" class="time">
+             <textarea name = "message" placeholder = "Message" rows = "7" cols= "50"></textarea>
+
+            <input type = "submit" >
+        </form>
+
+
+
+</body>
+
+</main>
+
+</html>
+
+{ endblock }
