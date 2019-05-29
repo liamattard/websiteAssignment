@@ -7,7 +7,7 @@ body{
 h1{
 
     position: relative;
-    color: white;
+    color: rgb(71, 71, 71);
     left: 43%;
     top:20%;
 
@@ -16,7 +16,7 @@ h2
 {
     position: relative;
     font-size: 100%;
-    color: white;
+    color:rgb(71, 71, 71);
     left: 40%;
     top:25%;
 
@@ -26,9 +26,9 @@ h3
 {
     position: absolute;
     font-size: 100%;
-    color: white;
+    color: rgb(71, 71, 71);
     left: 25%;
-    top:70%;
+    top:90%;
 
 
 }
@@ -36,9 +36,9 @@ h4
 {
     position: absolute;
     font-size: 100%;
-    color: white;
+    color: rgb(71, 71, 71);
     left: 42%;
-    top:70%;
+    top:90%;
 
 
 }
@@ -46,9 +46,9 @@ h5
 {
     position: absolute;
     font-size: 100%;
-    color: white;
+    color:rgb(71, 71, 71);
     left: 60%;
-    top:70%;
+    top:90%;
 
 
 }
@@ -56,9 +56,21 @@ h5
 {
     position: absolute;
     font-size: 100%;
-    color: white;
+    color: rgb(71, 71, 71);
     left: 60%;
-    top:80%;
+    top:100%;
+
+}
+h6
+{
+    position: absolute;
+    font-size : 90%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: red; 
+    left:45%;
+    top: 178%;
+
+
 
 }
 .contact
@@ -66,9 +78,9 @@ h5
 
     position: absolute;
     font-size: 100%;
-    color: white;
+    color: rgb(71, 71, 71);
     left: 42%;
-    top:80%;
+    top:100%;
 
 
 }
@@ -77,9 +89,9 @@ address
 {
     position: absolute;
     font-size: 100%;
-    color: white;
+    color:rgb(71, 71, 71);
     left: 25%;
-    top:80%;
+    top:100%;
 
 
 
@@ -97,6 +109,7 @@ input[type = text]{
 
     border: 2px #bccd00;
     border-radius: 4px;
+    color: white;
     width: 30%;
     height: 5%;
     background-color:rgb(71, 71, 71);
@@ -108,8 +121,9 @@ input[type = submit]{
     border: 2px #bccd00;
     width: 10%;
     height: 5%;
+    color: white;
     background-color:rgb(71, 71, 71);
-    top: 160%;
+    top: 190%;
     left:45%;
 }
 
@@ -119,8 +133,9 @@ textarea
     border: 2px #bccd00;
     border-radius: 4px;
     background-color:rgb(71, 71, 71);
+    color: white;
     left: 35%;
-    top:140%;
+    top:160%;
 
 
 }
@@ -128,28 +143,28 @@ textarea
 {
     position: absolute;
     left: 35%;
-    top:100%;
+    top:120%;
 
 }
 .surnametext
 {
     position: absolute;
     left:35%;
-    top:110%;
+    top:130%;
 
 }
 .emailtext
 {
     position: absolute;
     left:35%;
-    top: 120%;
+    top: 140%;
 
 }
 .subjecttext
 {
     position: absolute;
     left:35%;
-    top: 130%;
+    top: 150%;
 
 
 }

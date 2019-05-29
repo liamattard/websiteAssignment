@@ -12,62 +12,80 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySql: " . mysqli_connect_error();
 }
 
-
+$count = 0;
 
 if (!empty($_POST["name"])) {
+    $name = clean_input($_POST["name"]);
         if(strlen($_POST["name"]) > 50){
 
-        $_SESSION["wrongdetails"] = "not more than 50 characters";
-        header('Location: ./contacttrail.php');
-
+        $_SESSION["wrongdetails"] = "Name is longer than 50 characters";
+        header('Location: contacttrail.php');
+            $count ++;
         }
 } else {
-    $_SESSION["wrongdetails"] = "no name filled";
+    $_SESSION["wrongdetails"] = "Name required";
     header('Location: contacttrail.php');
+    $count ++;
 }
 
 if (!empty($_POST["surname"]) ) {
+    $surname = clean_input($_POST["surname"]);
 
     if(strlen($_POST["surname"]) > 50){
 
-        $_SESSION["wrongdetails"] = "too long surname";
+        $_SESSION["wrongdetails"] = "Surname is longer than 50 characters";
         header('Location: contacttrail.php');
+        $count ++;
     }
     
 } else {
-    $_SESSION["wrongdetails"] = "no surname";
+    $_SESSION["wrongdetails"] = "Surname required";
     header('Location: contacttrail.php');
+    $count ++;
 }
 
 if (!empty($_POST["email"])) {
+    $email = clean_input($_POST["email"]);
 
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-            $_SESSION["wrongdetails"] = "invalid email";
-            header('Location: ./contacttrail.php');
+            $_SESSION["wrongdetails"] = "Invalid email format";
+            header('Location: contacttrail.php');
+            $count ++;
         
         }       
 } else {
-    $_SESSION["wrongdetails"] = "no email filled";
+    $_SESSION["wrongdetails"] = "Email required";
     header('Location: contacttrail.php');
+    $count ++;
 }
 
 if (!empty($_POST["message"])) {
     $message = clean_input($_POST["message"]);
-    if (strlen($message) > 50) {
+    if (strlen($message) > 100) {
      
-        $_SESSION["wrongdetails"] = "message longer than 50 character";
+        $_SESSION["wrongdetails"] = "Message too long";
         header('Location: contacttrail.php');
+        $count ++;
     }
 } else {
   
 
-    $_SESSION["wrongdetails"] = "empty message";
+    $_SESSION["wrongdetails"] = "Message required";
     header('Location: contacttrail.php');
+    $count ++;
 }
 
+//if more than 1 mistake is found
+// if($count > 1)
+// {
+//     $_SESSION["wrongdetails"] = "*More than one mistake was found in your submission";
+//     header('Location: contacttrail.php');
+
+// }
 
 
+// $count = 0;
 
 if (!isset($_SESSION["wrongdetails"])) {
 
@@ -86,7 +104,7 @@ if (!isset($_SESSION["wrongdetails"])) {
     header('Location: contacttrail.php');
 }
 
-
+header('Location: contacttrail.php');
 
 
 
@@ -97,3 +115,4 @@ function clean_input($data)
     $data = htmlspecialchars($data);
     return $data;
 }
+?>
