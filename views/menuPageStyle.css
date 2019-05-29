@@ -158,6 +158,23 @@ h1 {
     margin-left: 5vw;
 }
 
+h3{
+    
+    font: 400 100px/1.3 'Lobster Two', Helvetica, sans-serif;
+    text-shadow: 1px 1px 0px #d1d1d1, 4px 4px 0px rgba(0, 0, 0, 0.15);
+    font-size: 2vw;
+    color:rgb(55, 61, 77);
+    margin-left: 5vw;
+    text-align: left;
+    animation: fadein 4s;
+    
+}
+
+@keyframes fadein {
+    from {opacity: 0; text-shadow: 1px 1px 0px #d1d1d1, 4vw 2vw 1vw rgb(0, 0, 0);}
+    to {opacity: 1;}
+  }
+
 #primaryImage {
     margin-top: 26%;
     margin-left: 15%;
@@ -216,4 +233,5 @@ h1 {
 .hidden {
     display: none;
 }
+
 
