@@ -12,7 +12,6 @@ if (mysqli_connect_errno()) {
     echo "Failed to connect to MySql: " . mysqli_connect_error();
 }
 
-$count = 0;
 
 if (!empty($_POST["name"])) {
     $name = clean_input($_POST["name"]);
@@ -20,7 +19,7 @@ if (!empty($_POST["name"])) {
 
         $_SESSION["wrongdetails"] = "Name is longer than 50 characters";
         header('Location: contacttrail.php');
-            $count ++;
+
         }
 } else {
     $_SESSION["wrongdetails"] = "Name required";

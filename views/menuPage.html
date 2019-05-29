@@ -9,9 +9,9 @@
 
 
 <div id="container">
-    { set image = "" }{ set colour = "" }{ set like = "" }{ set num = 0 } { set first = "" } { set break = false } { for food in food if not break } { set num = num + 1 } { if food.category == display } { set first = food.name }{ set colour = food.colour } { set image = food.image } { set like = food.likeButton } { set break = true } { endif } { endfor }
+    { set image = "" }{ set colour = "" }{ set id = "" }{ set like = "" }{ set num = 0 } { set first = "" } { set break = false } { for food in food if not break } { set num = num + 1 } { if food.category == display } { set first = food.name }{ set colour = food.colour } { set image = food.image } { set like = food.likeButton } { set id = food.id }{ set break = true } { endif } { endfor }
 
-
+    <a href="getfood.php?id= {{ id }}">
     <div style="background-color:#{{ colour }}" class="split left">
         <h1>{{ first }}</h1>
 
@@ -23,11 +23,12 @@
 
             <input class="fav" type="image" border="0" src="views/assets/heart.png" alt="Submit" /> { endif }
         </form>
-    </div>
+    </div></a>
     <div class="split right">
         <div class="centered_right">
             { for food in food|slice(num) } { if food.category == display }
-            <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox">
+            
+            <div class="box" style="background-color:#{{ food.colour }}"><a href="getfood.php?id= {{ food.id }}"><img src="{{ food.image }}" class="imagebox"></a>
                 <div>
 
                     <form action="./favourites.php" method="POST">
