@@ -22,7 +22,6 @@
     
     }
 
-
-
+    $_SESSION["wrongdetails"] = null;
 
 
