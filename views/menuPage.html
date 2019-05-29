@@ -28,16 +28,12 @@
         <div class="centered_right">
 
             { for food in food|slice(num) } { if food.category == display }
-<<<<<<< HEAD
-            <div class="box" style="background-color:#{{ food.colour }}"><img src="{{ food.image }}" class="imagebox"> 
-                
-=======
             
             <div class="box" style="background-color:#{{ food.colour }}"><a href="getfood.php?id= {{ food.id }}"><img src="{{ food.image }}" class="imagebox"></a>
->>>>>>> dba4978c7af5088167da928d8e89d52c7249ced8
                 <div>
                        
                     <form action="./favourites.php" method="POST">
+                        <input class="hidden" name="page" type="text" value="menu.php">
                         <input class="hidden" name="foodname" type="text" value="{{ food.name }}"> { if food.likeButton == "grey" }
 
                         <input class="fav grey" type="image" src="views/assets/heart.png" border="0" alt="Submit" /> { else }
@@ -47,8 +43,7 @@
                         
                    
                             <div id="square"></div>
-                            <a href="contacttrail.php">  <p>{{ food.name }}</p></a>
-                          
+                            <a href="getfood.php?id= {{ id }}"><p>{{ food.name }}</p></a>
                   
 
                 </div>

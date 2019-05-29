@@ -1,5 +1,5 @@
 <?php
-
+use Twig\Node\ForNode;
 
 include_once 'connection.php';
 session_start();
@@ -17,9 +17,9 @@ function deleteDuplicate($conn, $foodID, $userID){
     if ($resultCheck3 > 0) {
         
         while ($row3 = mysqli_fetch_assoc($result3)) {
-            echo "bye";
+       
             if ($userID == $row3['user_ID'] &&  $foodID == $row3['food_ID']) {
-                echo "hi";
+         
                 $sql2 = "DELETE FROM favourites WHERE user_ID = $userID and food_ID = $foodID;";
                 $duplicate = true;
                     if (!mysqli_query($conn, $sql2)) {                       
@@ -82,7 +82,15 @@ if (!isset($_SESSION["loggedin"])) {
             }
         }
     }
-    header('Location: menu.php');
+    if(strcasecmp($_POST['page'], 'menu.php') == 0){
+        header('Location: menu.php');
+    }
+    $x = $_SESSION['currentFood'];
+    if(strcasecmp($_POST['page'], 'getfood.php') == 0){
+        header('Location: getfood.php?id= '.$x);
+    }
+    
+
 }
 
     mysqli_close($connect);

@@ -9,15 +9,8 @@ $password = '';
 $dbname = '8bitBurger';
 
 
-$loader = new Twig_Loader_Filesystem('views');
-$twig = new Twig_Environment($loader);
-
-$lexer = new Twig_Lexer($twig, array(
-    'tag_block'      => array('{', '}'),
-    'tag_variable'   => array('{{', '}}')
-));
-
-
+require_once __DIR__."/twig.php";
+    
 
 
 $twig->setLexer($lexer);
