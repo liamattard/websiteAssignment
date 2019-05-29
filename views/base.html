@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-
+<!-- screen output for navigation bar -->
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +14,7 @@
     <body>
 
         <ul>
+            <!-- if the page is to be loaded show the following items linking to pages-->
             { if page == true }
 
             <li><a href="menu.php">Menu <i class="fa fa-hamburger"></i></a></li>
@@ -23,6 +24,7 @@
             <li><a href="contacttrail.php">Contact Us <i class="fa fa-phone"></i></a></li>
             <li><a href="aboutUs.php">About Us   <i class="fa fa-info"></i></a></li>
             <li style="float:right"><a href="reserve.php">Book a table<i class="fa fa-calendar-minus"></i></a></li>
+            <!-- if a user is logged in set the current buttons to the ones below -->
             { if loggedIn == true }
             <li style="float:right"><a href="logout.php">logout <i class="fa fa-sign-out-alt"></i></a></li>
             <li style="float:right"><a href="printFavourites.php"> welcome, {{ user }} <i class="fa fa-user"></i></a></li>

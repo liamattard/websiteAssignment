@@ -4,8 +4,9 @@
    
 
     <div class="split left">
+        <!-- set this header as the food item name -->
         <h1>{{ food.name }}</h1>
-
+        <!-- set each item's image -->
         <img id="primaryImage" src="{{ food.image }}" class="image">
         <form action="./favourites.php" method="POST">
             <input class="hidden" name="page" type="text" value="getfood.php">

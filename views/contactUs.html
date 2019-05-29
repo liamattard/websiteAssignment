@@ -1,11 +1,13 @@
 { extends "base.html" } { block style } ./views/contactstyle.css { endblock } { block content }
 
-
+<!-- screen output for contact page -->
 <body>
 
+    <!-- main title headers -->
     <h1>Contact Us </h1>
     <h2> We would like to hear from you! </h2>
 
+    <!-- div set for google maps including link with API key -->
     <div id="map"></div>
     <script type="text/javascript" src="./views/map.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaMqECPd8G0UAzExZpjDSdt4RmtapT3MI&callback=initMap">
@@ -14,6 +16,7 @@
 
 
     <p>
+        <!-- different headers set with different information about the restaurant -->
         <h3>Find us </h3>
         <address> 8-Bit Burger<br>
                 Triq il- Gvernatur<br>
@@ -31,16 +34,13 @@
 
         </p>
 
-
-
-
-
     </p>
 
 
-
+    <!-- header for any error messages that might occur -->
     <h6>{{ message }}</h6>
   
+    <!-- contact form bare build with placeholders -->
     <form class="contact-form" action="./insertcontact.php" method="post">
         <input type="text" name="name" placeholder="Name..." class="nametext">
         <input type="text" name="surname" placeholder="Surname..." class="surnametext">
