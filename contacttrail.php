@@ -4,39 +4,24 @@
     require './vendor/autoload.php';
     
     
-    $loader = new Twig_Loader_Filesystem('views');
-    $twig = new Twig_Environment($loader);
-    
-    $lexer = new Twig_Lexer($twig, array(
-        'tag_block'      => array('{', '}'),
-        'tag_variable'   => array('{{', '}}')
-    ));
-    
-    $twig->setLexer($lexer);
-    
+
+    require_once __DIR__."/twig.php";
+
     $loggedIn = false;
-    $wrongDetails = false;
+    $wrongDetails = null;
 
     if (isset($_SESSION["wrongdetails"])) {
-        $wrongDetails = true;
+        $wrongDetails = $_SESSION["wrongdetails"];
     }
     if (isset($_SESSION["name"])) {
         $loggedIn = true;
-        echo $twig->render('contactUs.html', ['loggedIn' => $loggedIn, 'user' => $_SESSION["name"], 'page' => true, 'error' => $wrongDetails, 'message' => $_SESSION["wrongdetails"]]);
+        echo $twig->render('contactUs.html', ['loggedIn' => $loggedIn, 'user' => $_SESSION["name"], 'page' => true, 'message' => $wrongDetails]);
     
     } else {
-        echo $twig->render('contactUs.html', ['loggedIn' => $loggedIn,'page' => false,'error' => $wrongDetails, 'message' => $_SESSION["wrongdetails"]]);
+        echo $twig->render('contactUs.html', ['loggedIn' => $loggedIn,'page' => false, 'message' => $wrongDetails]);
     
     }
 
-    if(isset($_SESSION["wrongdetails"]))
-    {
-        
-        
-
-
-    }
-
-
+    $_SESSION["wrongdetails"] = null;
 
 
