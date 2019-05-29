@@ -101,8 +101,8 @@ p {
     color: white;
     text-shadow: 2px 2px 7px #000000;
     margin-left: 3vw;
-    margin-top: 5%;
-    z-index: 1;
+    margin-top: 1vw;
+    z-index: 4;
     
 }
 
@@ -170,6 +170,16 @@ h3{
     
 }
 
+
+#imgA{
+    border-radius: 2vw;
+    animation: fadein 4s;
+    margin: 15vw 0 0 10vw; 
+    width: 60%;
+    border-radius: 2vw;
+    box-shadow: 1vw 2vw 1vw rgba(0, 0, 0, 0.26);
+}
+
 @keyframes fadein {
     from {opacity: 0; text-shadow: 1px 1px 0px #d1d1d1, 4vw 2vw 1vw rgb(0, 0, 0);}
     to {opacity: 1;}
@@ -235,3 +245,44 @@ h3{
 }
 
 
+.cta{
+    position: relative;
+    margin: auto;
+    padding: 19px 22px;
+    transition: all .2s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(#FFAB9D,.5);
+    width: 56px;
+    height: 56px;
+    transition: all .3s ease;
+}
+
+
+
+#square {
+
+    position: absolute;
+    transition: ease 0.5s;
+    height: 3vw;
+    width: 3vw;
+    background-color: #555;
+    margin-left: 2vw;
+    margin-top: 0.5vw;
+    opacity: 0.2;
+    border-radius: 3vw;
+    z-index: 3;
+
+} 
+
+.box:hover #square{
+    
+    width: 13vw;
+    background-color: rgba(130, 172, 192, 0.836);
+    opacity: 1;
+
+  } 
